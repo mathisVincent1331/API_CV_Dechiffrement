@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #ffffff;
+    padding-top: 100px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.3em;
+    font-weight: 600;
+    padding: 20px 0 15px 0;
+    color: #333;
+    background-color: aliceblue;
+}
+
+.description {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #555;
+    margin: 0px 60px 40px 60px;
+}
+
+.drag-area {
+    border: 2px dashed rgb(0, 0, 0);
+    height: 500px;
+    width: 700px;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0fb8ac;
+    box-shadow: #0fb8ac 0px 5px 15px;
+}
+
+.drag-area .active {
+    border: 2px solid black;
+}
+
+.drag-area .icon { 
+    font-size: 100px;
+    color: #fff;
+}
+
+.drag-area h1 {
+    font-size: 34px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.drag-area span {
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+    margin: 10px 0 15px 0;
+}
+
+.drag-area button {
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background: #fff;
+    color: #0fb8ac;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.drag-area img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.downloadBtn {
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background: #0fb8ac;
+    color: #000000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.downloadBtn:hover {
+    background: #09504f;
+    color: #fff;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+  color: #374151;
+  margin-top: 30px;
+  margin-bottom: 32px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+footer {
+  font-size: 0.9rem;
+  color: #6b7280;
+}

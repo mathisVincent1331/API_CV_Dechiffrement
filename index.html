@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV déchiffrement FUN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <script src="newgame.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.29.0/full/pyodide.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Un CV chiffré.</h1> 
+        <h2>Une curiosité à décrypter!</h2>
+    </header>
+
+    <main>
+
+        <!-- Phrase de présentation -->
+        <section class="description">
+            <h3>Bienvenue sur mon CV interactif! </h3>
+            <p> *Il vous suffit de glisser-déposer le fichier <strong>CV_chiffré-Mathis_Vincent.pdf</strong> pour découvrir
+                mon parcours, mes compétences et mes projets. 
+            </p>
+        </section>
+
+        <!-- Drop Box -->
+        <div class="drag-area">
+            <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                <h1>Déposez le CV chiffré ici</h1>
+                <span>Nous nous chargeons du reste.</span>
+                <button>Accéder au CV</button>
+                <input type="file" hidden>
+            </div>
+
+        <!-- Bouton permettant le téléchargement du fichier passer dans le Drop Box -->
+        <div>
+            <button id="downloadBtn" class="downloadBtn" style="display:none;">Télécharger le CV déchiffré</button>
+        </div>
+        
+        <!-- Lancement du scipt Java -->
+        <script src="script.js"></script>
+
+        <section class="features">
+            <div class="feature">Aucune données sauvegardées</div>
+            <div class="feature">Utilisation locale</div>
+            <div class="feature">Projet personnel – Alternance</div>
+            <div class="feature">Déchiffrement AES-CBC</div>
+        </section>
+
+        <footer>
+            Créé et imaginé par <strong>Mathis VINCENT</strong> — Étudiant développeur à la recherche d’une alternance dans le domaine de la cybersécurité.
+        </footer>
+
+    </main>
+</body>
+
+</html>
+
